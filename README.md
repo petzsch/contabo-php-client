@@ -265,11 +265,11 @@ To install the bindings via [Composer](https://getcomposer.org/), add the follow
   "repositories": [
     {
       "type": "vcs",
-      "url": "https:////.git"
+      "url": "https://github.com/petzsch/contabo-php-client.git"
     }
   ],
   "require": {
-    "/": "*@dev"
+    "petzsch/contabo-php-client": "*@dev"
   }
 }
 ```
