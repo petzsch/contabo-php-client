@@ -1,11 +1,11 @@
 # OpenAPI\Client\InternalApi
 
-All URIs are relative to https://api.contabo.com.
+All URIs are relative to https://api.contabo.com, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**createTicket()**](InternalApi.md#createTicket) | **POST** /v1/create-ticket | Create a new support ticket
-[**retrieveUserIsPasswordSet()**](InternalApi.md#retrieveUserIsPasswordSet) | **GET** /v1/users/is-password-set | Get user is password set status
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**createTicket()**](InternalApi.md#createTicket) | **POST** /v1/create-ticket | Create a new support ticket |
+| [**retrieveUserIsPasswordSet()**](InternalApi.md#retrieveUserIsPasswordSet) | **GET** /v1/users/is-password-set | Get user is password set status |
 
 
 ## `createTicket()`
@@ -49,11 +49,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **create_ticket_request** | [**\OpenAPI\Client\Model\CreateTicketRequest**](../Model/CreateTicketRequest.md)|  |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **create_ticket_request** | [**\OpenAPI\Client\Model\CreateTicketRequest**](../Model/CreateTicketRequest.md)|  | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -113,11 +113,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
- **user_id** | **string**| The user ID for checking if password is set for him | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
+| **user_id** | **string**| The user ID for checking if password is set for him | [optional] |
 
 ### Return type
 

@@ -1,14 +1,14 @@
 # OpenAPI\Client\SecretsApi
 
-All URIs are relative to https://api.contabo.com.
+All URIs are relative to https://api.contabo.com, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**createSecret()**](SecretsApi.md#createSecret) | **POST** /v1/secrets | Create a new secret
-[**deleteSecret()**](SecretsApi.md#deleteSecret) | **DELETE** /v1/secrets/{secretId} | Delete existing secret by id
-[**retrieveSecret()**](SecretsApi.md#retrieveSecret) | **GET** /v1/secrets/{secretId} | Get specific secret by id
-[**retrieveSecretList()**](SecretsApi.md#retrieveSecretList) | **GET** /v1/secrets | List secrets
-[**updateSecret()**](SecretsApi.md#updateSecret) | **PATCH** /v1/secrets/{secretId} | Update specific secret by id
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**createSecret()**](SecretsApi.md#createSecret) | **POST** /v1/secrets | Create a new secret |
+| [**deleteSecret()**](SecretsApi.md#deleteSecret) | **DELETE** /v1/secrets/{secretId} | Delete existing secret by id |
+| [**retrieveSecret()**](SecretsApi.md#retrieveSecret) | **GET** /v1/secrets/{secretId} | Get specific secret by id |
+| [**retrieveSecretList()**](SecretsApi.md#retrieveSecretList) | **GET** /v1/secrets | List secrets |
+| [**updateSecret()**](SecretsApi.md#updateSecret) | **PATCH** /v1/secrets/{secretId} | Update specific secret by id |
 
 
 ## `createSecret()`
@@ -52,11 +52,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **create_secret_request** | [**\OpenAPI\Client\Model\CreateSecretRequest**](../Model/CreateSecretRequest.md)|  |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **create_secret_request** | [**\OpenAPI\Client\Model\CreateSecretRequest**](../Model/CreateSecretRequest.md)|  | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -115,11 +115,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **secret_id** | **int**| The id of the secret |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **secret_id** | **int**| The id of the secret | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -179,11 +179,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **secret_id** | **int**| The id of the secret |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **secret_id** | **int**| The id of the secret | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -247,15 +247,15 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
- **page** | **int**| Number of page to be fetched. | [optional]
- **size** | **int**| Number of elements per page. | [optional]
- **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional]
- **name** | **string**| Filter secrets by name | [optional]
- **type** | **string**| Filter secrets by type | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
+| **page** | **int**| Number of page to be fetched. | [optional] |
+| **size** | **int**| Number of elements per page. | [optional] |
+| **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional] |
+| **name** | **string**| Filter secrets by name | [optional] |
+| **type** | **string**| Filter secrets by type | [optional] |
 
 ### Return type
 
@@ -316,12 +316,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **secret_id** | **int**| The id of the secret |
- **update_secret_request** | [**\OpenAPI\Client\Model\UpdateSecretRequest**](../Model/UpdateSecretRequest.md)|  |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **secret_id** | **int**| The id of the secret | |
+| **update_secret_request** | [**\OpenAPI\Client\Model\UpdateSecretRequest**](../Model/UpdateSecretRequest.md)|  | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 

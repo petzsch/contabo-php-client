@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**inbound** | [**\OpenAPI\Client\Model\InboundRule[]**](InboundRule.md) |  |
+**inbound** | [**\OpenAPI\Client\Model\FirewallRuleResponse[]**](FirewallRuleResponse.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

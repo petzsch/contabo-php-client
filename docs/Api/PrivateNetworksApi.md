@@ -1,16 +1,16 @@
 # OpenAPI\Client\PrivateNetworksApi
 
-All URIs are relative to https://api.contabo.com.
+All URIs are relative to https://api.contabo.com, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**assignInstancePrivateNetwork()**](PrivateNetworksApi.md#assignInstancePrivateNetwork) | **POST** /v1/private-networks/{privateNetworkId}/instances/{instanceId} | Add instance to a Private Network
-[**createPrivateNetwork()**](PrivateNetworksApi.md#createPrivateNetwork) | **POST** /v1/private-networks | Create a new Private Network
-[**deletePrivateNetwork()**](PrivateNetworksApi.md#deletePrivateNetwork) | **DELETE** /v1/private-networks/{privateNetworkId} | Delete existing Private Network by id
-[**patchPrivateNetwork()**](PrivateNetworksApi.md#patchPrivateNetwork) | **PATCH** /v1/private-networks/{privateNetworkId} | Update a Private Network by id
-[**retrievePrivateNetwork()**](PrivateNetworksApi.md#retrievePrivateNetwork) | **GET** /v1/private-networks/{privateNetworkId} | Get specific Private Network by id
-[**retrievePrivateNetworkList()**](PrivateNetworksApi.md#retrievePrivateNetworkList) | **GET** /v1/private-networks | List Private Networks
-[**unassignInstancePrivateNetwork()**](PrivateNetworksApi.md#unassignInstancePrivateNetwork) | **DELETE** /v1/private-networks/{privateNetworkId}/instances/{instanceId} | Remove instance from a Private Network
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**assignInstancePrivateNetwork()**](PrivateNetworksApi.md#assignInstancePrivateNetwork) | **POST** /v1/private-networks/{privateNetworkId}/instances/{instanceId} | Add instance to a Private Network |
+| [**createPrivateNetwork()**](PrivateNetworksApi.md#createPrivateNetwork) | **POST** /v1/private-networks | Create a new Private Network |
+| [**deletePrivateNetwork()**](PrivateNetworksApi.md#deletePrivateNetwork) | **DELETE** /v1/private-networks/{privateNetworkId} | Delete existing Private Network by id |
+| [**patchPrivateNetwork()**](PrivateNetworksApi.md#patchPrivateNetwork) | **PATCH** /v1/private-networks/{privateNetworkId} | Update a Private Network by id |
+| [**retrievePrivateNetwork()**](PrivateNetworksApi.md#retrievePrivateNetwork) | **GET** /v1/private-networks/{privateNetworkId} | Get specific Private Network by id |
+| [**retrievePrivateNetworkList()**](PrivateNetworksApi.md#retrievePrivateNetworkList) | **GET** /v1/private-networks | List Private Networks |
+| [**unassignInstancePrivateNetwork()**](PrivateNetworksApi.md#unassignInstancePrivateNetwork) | **DELETE** /v1/private-networks/{privateNetworkId}/instances/{instanceId} | Remove instance from a Private Network |
 
 
 ## `assignInstancePrivateNetwork()`
@@ -55,12 +55,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **private_network_id** | **int**| The identifier of the Private Network |
- **instance_id** | **int**| The identifier of the instance |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **private_network_id** | **int**| The identifier of the Private Network | |
+| **instance_id** | **int**| The identifier of the instance | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -120,11 +120,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **create_private_network_request** | [**\OpenAPI\Client\Model\CreatePrivateNetworkRequest**](../Model/CreatePrivateNetworkRequest.md)|  |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **create_private_network_request** | [**\OpenAPI\Client\Model\CreatePrivateNetworkRequest**](../Model/CreatePrivateNetworkRequest.md)|  | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -183,11 +183,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **private_network_id** | **int**| The identifier of the Private Network |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **private_network_id** | **int**| The identifier of the Private Network | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -248,12 +248,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **private_network_id** | **int**| The identifier of the Private Network |
- **patch_private_network_request** | [**\OpenAPI\Client\Model\PatchPrivateNetworkRequest**](../Model/PatchPrivateNetworkRequest.md)|  |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **private_network_id** | **int**| The identifier of the Private Network | |
+| **patch_private_network_request** | [**\OpenAPI\Client\Model\PatchPrivateNetworkRequest**](../Model/PatchPrivateNetworkRequest.md)|  | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -313,11 +313,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **private_network_id** | **int**| The identifier of the Private Network |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **private_network_id** | **int**| The identifier of the Private Network | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -381,15 +381,15 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
- **page** | **int**| Number of page to be fetched. | [optional]
- **size** | **int**| Number of elements per page. | [optional]
- **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional]
- **name** | **string**| The name of the Private Network | [optional]
- **instance_ids** | **string**| Comma separated instances identifiers | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
+| **page** | **int**| Number of page to be fetched. | [optional] |
+| **size** | **int**| Number of elements per page. | [optional] |
+| **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional] |
+| **name** | **string**| The name of the Private Network | [optional] |
+| **instance_ids** | **string**| Comma separated instances identifiers | [optional] |
 
 ### Return type
 
@@ -450,12 +450,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **private_network_id** | **int**| The identifier of the Private Network |
- **instance_id** | **int**| The identifier of the instance |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **private_network_id** | **int**| The identifier of the Private Network | |
+| **instance_id** | **int**| The identifier of the instance | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 

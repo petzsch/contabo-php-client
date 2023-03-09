@@ -1,11 +1,11 @@
 # OpenAPI\Client\InvoicesApi
 
-All URIs are relative to https://api.contabo.com.
+All URIs are relative to https://api.contabo.com, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getFile()**](InvoicesApi.md#getFile) | **GET** /v1/invoices/{invoiceId} | Download invoice
-[**retrieveInvoiceNumberList()**](InvoicesApi.md#retrieveInvoiceNumberList) | **GET** /v1/invoices | List invoices
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**getFile()**](InvoicesApi.md#getFile) | **GET** /v1/invoices/{invoiceId} | Download invoice |
+| [**retrieveInvoiceNumberList()**](InvoicesApi.md#retrieveInvoiceNumberList) | **GET** /v1/invoices | List invoices |
 
 
 ## `getFile()`
@@ -50,12 +50,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **invoice_id** | **int**| The identifier of the invoice |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
- **name** | **string**| set pdf file name | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **invoice_id** | **int**| The identifier of the invoice | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
+| **name** | **string**| set pdf file name | [optional] |
 
 ### Return type
 
@@ -117,13 +117,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
- **page** | **int**| Number of page to be fetched. | [optional]
- **size** | **int**| Number of elements per page. | [optional]
- **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
+| **page** | **int**| Number of page to be fetched. | [optional] |
+| **size** | **int**| Number of elements per page. | [optional] |
+| **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional] |
 
 ### Return type
 

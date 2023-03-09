@@ -1,15 +1,15 @@
 # OpenAPI\Client\SnapshotsApi
 
-All URIs are relative to https://api.contabo.com.
+All URIs are relative to https://api.contabo.com, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**createSnapshot()**](SnapshotsApi.md#createSnapshot) | **POST** /v1/compute/instances/{instanceId}/snapshots | Create a new instance snapshot
-[**deleteSnapshot()**](SnapshotsApi.md#deleteSnapshot) | **DELETE** /v1/compute/instances/{instanceId}/snapshots/{snapshotId} | Delete existing snapshot by id
-[**retrieveSnapshot()**](SnapshotsApi.md#retrieveSnapshot) | **GET** /v1/compute/instances/{instanceId}/snapshots/{snapshotId} | Retrieve a specific snapshot by id
-[**retrieveSnapshotList()**](SnapshotsApi.md#retrieveSnapshotList) | **GET** /v1/compute/instances/{instanceId}/snapshots | List snapshots
-[**rollbackSnapshot()**](SnapshotsApi.md#rollbackSnapshot) | **POST** /v1/compute/instances/{instanceId}/snapshots/{snapshotId}/rollback | Rollback the instance to a specific snapshot by id
-[**updateSnapshot()**](SnapshotsApi.md#updateSnapshot) | **PATCH** /v1/compute/instances/{instanceId}/snapshots/{snapshotId} | Update specific snapshot by id
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**createSnapshot()**](SnapshotsApi.md#createSnapshot) | **POST** /v1/compute/instances/{instanceId}/snapshots | Create a new instance snapshot |
+| [**deleteSnapshot()**](SnapshotsApi.md#deleteSnapshot) | **DELETE** /v1/compute/instances/{instanceId}/snapshots/{snapshotId} | Delete existing snapshot by id |
+| [**retrieveSnapshot()**](SnapshotsApi.md#retrieveSnapshot) | **GET** /v1/compute/instances/{instanceId}/snapshots/{snapshotId} | Retrieve a specific snapshot by id |
+| [**retrieveSnapshotList()**](SnapshotsApi.md#retrieveSnapshotList) | **GET** /v1/compute/instances/{instanceId}/snapshots | List snapshots |
+| [**rollbackSnapshot()**](SnapshotsApi.md#rollbackSnapshot) | **POST** /v1/compute/instances/{instanceId}/snapshots/{snapshotId}/rollback | Rollback the instance to a specific snapshot by id |
+| [**updateSnapshot()**](SnapshotsApi.md#updateSnapshot) | **PATCH** /v1/compute/instances/{instanceId}/snapshots/{snapshotId} | Update specific snapshot by id |
 
 
 ## `createSnapshot()`
@@ -54,12 +54,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **instance_id** | **int**| The identifier of the instance |
- **create_snapshot_request** | [**\OpenAPI\Client\Model\CreateSnapshotRequest**](../Model/CreateSnapshotRequest.md)|  |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **instance_id** | **int**| The identifier of the instance | |
+| **create_snapshot_request** | [**\OpenAPI\Client\Model\CreateSnapshotRequest**](../Model/CreateSnapshotRequest.md)|  | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -119,12 +119,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **instance_id** | **int**| The identifier of the instance |
- **snapshot_id** | **string**| The identifier of the snapshot |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **instance_id** | **int**| The identifier of the instance | |
+| **snapshot_id** | **string**| The identifier of the snapshot | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -185,12 +185,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **instance_id** | **int**| The identifier of the instance |
- **snapshot_id** | **string**| The identifier of the snapshot |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **instance_id** | **int**| The identifier of the instance | |
+| **snapshot_id** | **string**| The identifier of the snapshot | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -254,15 +254,15 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **instance_id** | **int**| The identifier of the instance |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
- **page** | **int**| Number of page to be fetched. | [optional]
- **size** | **int**| Number of elements per page. | [optional]
- **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional]
- **name** | **string**| Filter as substring match for snapshots names. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **instance_id** | **int**| The identifier of the instance | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
+| **page** | **int**| Number of page to be fetched. | [optional] |
+| **size** | **int**| Number of elements per page. | [optional] |
+| **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional] |
+| **name** | **string**| Filter as substring match for snapshots names. | [optional] |
 
 ### Return type
 
@@ -323,12 +323,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **instance_id** | **int**| The identifier of the instance |
- **snapshot_id** | **string**| The identifier of the snapshot |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **instance_id** | **int**| The identifier of the instance | |
+| **snapshot_id** | **string**| The identifier of the snapshot | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -390,13 +390,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **instance_id** | **int**| The identifier of the instance |
- **snapshot_id** | **string**| The identifier of the snapshot |
- **update_snapshot_request** | [**\OpenAPI\Client\Model\UpdateSnapshotRequest**](../Model/UpdateSnapshotRequest.md)|  |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **instance_id** | **int**| The identifier of the instance | |
+| **snapshot_id** | **string**| The identifier of the snapshot | |
+| **update_snapshot_request** | [**\OpenAPI\Client\Model\UpdateSnapshotRequest**](../Model/UpdateSnapshotRequest.md)|  | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 

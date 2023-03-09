@@ -1,14 +1,14 @@
 # OpenAPI\Client\TagsApi
 
-All URIs are relative to https://api.contabo.com.
+All URIs are relative to https://api.contabo.com, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**createTag()**](TagsApi.md#createTag) | **POST** /v1/tags | Create a new tag
-[**deleteTag()**](TagsApi.md#deleteTag) | **DELETE** /v1/tags/{tagId} | Delete existing tag by id
-[**retrieveTag()**](TagsApi.md#retrieveTag) | **GET** /v1/tags/{tagId} | Get specific tag by id
-[**retrieveTagList()**](TagsApi.md#retrieveTagList) | **GET** /v1/tags | List tags
-[**updateTag()**](TagsApi.md#updateTag) | **PATCH** /v1/tags/{tagId} | Update specific tag by id
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**createTag()**](TagsApi.md#createTag) | **POST** /v1/tags | Create a new tag |
+| [**deleteTag()**](TagsApi.md#deleteTag) | **DELETE** /v1/tags/{tagId} | Delete existing tag by id |
+| [**retrieveTag()**](TagsApi.md#retrieveTag) | **GET** /v1/tags/{tagId} | Get specific tag by id |
+| [**retrieveTagList()**](TagsApi.md#retrieveTagList) | **GET** /v1/tags | List tags |
+| [**updateTag()**](TagsApi.md#updateTag) | **PATCH** /v1/tags/{tagId} | Update specific tag by id |
 
 
 ## `createTag()`
@@ -52,11 +52,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **create_tag_request** | [**\OpenAPI\Client\Model\CreateTagRequest**](../Model/CreateTagRequest.md)|  |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **create_tag_request** | [**\OpenAPI\Client\Model\CreateTagRequest**](../Model/CreateTagRequest.md)|  | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -115,11 +115,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **tag_id** | **int**| The identifier of the tag |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **tag_id** | **int**| The identifier of the tag | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -179,11 +179,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **tag_id** | **int**| The identifier of the tag |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **tag_id** | **int**| The identifier of the tag | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -246,14 +246,14 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
- **page** | **int**| Number of page to be fetched. | [optional]
- **size** | **int**| Number of elements per page. | [optional]
- **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional]
- **name** | **string**| Filter as substring match for tag names. Tags may contain letters, numbers, colons, dashes, and underscores. There is a limit of 255 characters per tag. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
+| **page** | **int**| Number of page to be fetched. | [optional] |
+| **size** | **int**| Number of elements per page. | [optional] |
+| **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional] |
+| **name** | **string**| Filter as substring match for tag names. Tags may contain letters, numbers, colons, dashes, and underscores. There is a limit of 255 characters per tag. | [optional] |
 
 ### Return type
 
@@ -314,12 +314,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **tag_id** | **int**| The identifier of the tag |
- **update_tag_request** | [**\OpenAPI\Client\Model\UpdateTagRequest**](../Model/UpdateTagRequest.md)|  |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **tag_id** | **int**| The identifier of the tag | |
+| **update_tag_request** | [**\OpenAPI\Client\Model\UpdateTagRequest**](../Model/UpdateTagRequest.md)|  | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 

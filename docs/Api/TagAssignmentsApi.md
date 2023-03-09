@@ -1,13 +1,13 @@
 # OpenAPI\Client\TagAssignmentsApi
 
-All URIs are relative to https://api.contabo.com.
+All URIs are relative to https://api.contabo.com, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**createAssignment()**](TagAssignmentsApi.md#createAssignment) | **POST** /v1/tags/{tagId}/assignments/{resourceType}/{resourceId} | Create a new assignment for the tag
-[**deleteAssignment()**](TagAssignmentsApi.md#deleteAssignment) | **DELETE** /v1/tags/{tagId}/assignments/{resourceType}/{resourceId} | Delete existing tag assignment
-[**retrieveAssignment()**](TagAssignmentsApi.md#retrieveAssignment) | **GET** /v1/tags/{tagId}/assignments/{resourceType}/{resourceId} | Get specific assignment for the tag
-[**retrieveAssignmentList()**](TagAssignmentsApi.md#retrieveAssignmentList) | **GET** /v1/tags/{tagId}/assignments | List tag assignments
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**createAssignment()**](TagAssignmentsApi.md#createAssignment) | **POST** /v1/tags/{tagId}/assignments/{resourceType}/{resourceId} | Create a new assignment for the tag |
+| [**deleteAssignment()**](TagAssignmentsApi.md#deleteAssignment) | **DELETE** /v1/tags/{tagId}/assignments/{resourceType}/{resourceId} | Delete existing tag assignment |
+| [**retrieveAssignment()**](TagAssignmentsApi.md#retrieveAssignment) | **GET** /v1/tags/{tagId}/assignments/{resourceType}/{resourceId} | Get specific assignment for the tag |
+| [**retrieveAssignmentList()**](TagAssignmentsApi.md#retrieveAssignmentList) | **GET** /v1/tags/{tagId}/assignments | List tag assignments |
 
 
 ## `createAssignment()`
@@ -53,13 +53,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **tag_id** | **int**| The identifier of the tag. |
- **resource_type** | **string**| The identifier of the resource type. Resource type is one of &#x60;instance|image|object-storage&#x60;. |
- **resource_id** | **string**| The identifier of the resource id |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **tag_id** | **int**| The identifier of the tag. | |
+| **resource_type** | **string**| The identifier of the resource type. Resource type is one of &#x60;instance|image|object-storage&#x60;. | |
+| **resource_id** | **string**| The identifier of the resource id | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -120,13 +120,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **tag_id** | **int**| The identifier of the tag. |
- **resource_type** | **string**| The identifier of the resource type. Resource type is one of &#x60;instance|image|object-storage&#x60;. |
- **resource_id** | **string**| The identifier of the resource id |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **tag_id** | **int**| The identifier of the tag. | |
+| **resource_type** | **string**| The identifier of the resource type. Resource type is one of &#x60;instance|image|object-storage&#x60;. | |
+| **resource_id** | **string**| The identifier of the resource id | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -188,13 +188,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **tag_id** | **int**| The identifier of the tag. |
- **resource_type** | **string**| The identifier of the resource type. Resource type is one of &#x60;instance|image|object-storage&#x60;. |
- **resource_id** | **string**| The identifier of the resource id |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **tag_id** | **int**| The identifier of the tag. | |
+| **resource_type** | **string**| The identifier of the resource type. Resource type is one of &#x60;instance|image|object-storage&#x60;. | |
+| **resource_id** | **string**| The identifier of the resource id | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -258,15 +258,15 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **tag_id** | **int**| The identifier of the tag. |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
- **page** | **int**| Number of page to be fetched. | [optional]
- **size** | **int**| Number of elements per page. | [optional]
- **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional]
- **resource_type** | **string**| Filter as substring match for assignment resource type. Resource type is one of &#x60;instance|image|object-storage&#x60;. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **tag_id** | **int**| The identifier of the tag. | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
+| **page** | **int**| Number of page to be fetched. | [optional] |
+| **size** | **int**| Number of elements per page. | [optional] |
+| **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional] |
+| **resource_type** | **string**| Filter as substring match for assignment resource type. Resource type is one of &#x60;instance|image|object-storage&#x60;. | [optional] |
 
 ### Return type
 

@@ -8,5 +8,6 @@ Name | Type | Description | Notes
 **customer_id** | **string** | Your customer number |
 **object_storage_id** | **string** | Object Storage id |
 **cancel_date** | **\DateTime** | Cancellation date for object storage. |
+**display_name** | **string** | Display name for object storage. |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

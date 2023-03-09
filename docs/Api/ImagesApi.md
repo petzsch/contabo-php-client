@@ -1,15 +1,15 @@
 # OpenAPI\Client\ImagesApi
 
-All URIs are relative to https://api.contabo.com.
+All URIs are relative to https://api.contabo.com, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**createCustomImage()**](ImagesApi.md#createCustomImage) | **POST** /v1/compute/images | Provide a custom image
-[**deleteImage()**](ImagesApi.md#deleteImage) | **DELETE** /v1/compute/images/{imageId} | Delete an uploaded custom image by its id
-[**retrieveCustomImagesStats()**](ImagesApi.md#retrieveCustomImagesStats) | **GET** /v1/compute/images/stats | List statistics regarding the customer&#39;s custom images
-[**retrieveImage()**](ImagesApi.md#retrieveImage) | **GET** /v1/compute/images/{imageId} | Get details about a specific image by its id
-[**retrieveImageList()**](ImagesApi.md#retrieveImageList) | **GET** /v1/compute/images | List available standard and custom images
-[**updateImage()**](ImagesApi.md#updateImage) | **PATCH** /v1/compute/images/{imageId} | Update custom image name by its id
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**createCustomImage()**](ImagesApi.md#createCustomImage) | **POST** /v1/compute/images | Provide a custom image |
+| [**deleteImage()**](ImagesApi.md#deleteImage) | **DELETE** /v1/compute/images/{imageId} | Delete an uploaded custom image by its id |
+| [**retrieveCustomImagesStats()**](ImagesApi.md#retrieveCustomImagesStats) | **GET** /v1/compute/images/stats | List statistics regarding the customer&#39;s custom images |
+| [**retrieveImage()**](ImagesApi.md#retrieveImage) | **GET** /v1/compute/images/{imageId} | Get details about a specific image by its id |
+| [**retrieveImageList()**](ImagesApi.md#retrieveImageList) | **GET** /v1/compute/images | List available standard and custom images |
+| [**updateImage()**](ImagesApi.md#updateImage) | **PATCH** /v1/compute/images/{imageId} | Update custom image name by its id |
 
 
 ## `createCustomImage()`
@@ -53,11 +53,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **create_custom_image_request** | [**\OpenAPI\Client\Model\CreateCustomImageRequest**](../Model/CreateCustomImageRequest.md)|  |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **create_custom_image_request** | [**\OpenAPI\Client\Model\CreateCustomImageRequest**](../Model/CreateCustomImageRequest.md)|  | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -116,11 +116,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **image_id** | **string**| The identifier of the image |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **image_id** | **string**| The identifier of the image | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -179,10 +179,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -242,11 +242,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **image_id** | **string**| The identifier of the image |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **image_id** | **string**| The identifier of the image | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 
@@ -310,15 +310,15 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
- **page** | **int**| Number of page to be fetched. | [optional]
- **size** | **int**| Number of elements per page. | [optional]
- **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional]
- **name** | **string**| The name of the image | [optional]
- **standard_image** | **bool**| Flag indicating that image is either a standard (true) or a custom image (false) | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
+| **page** | **int**| Number of page to be fetched. | [optional] |
+| **size** | **int**| Number of elements per page. | [optional] |
+| **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional] |
+| **name** | **string**| The name of the image | [optional] |
+| **standard_image** | **bool**| Flag indicating that image is either a standard (true) or a custom image (false) | [optional] |
 
 ### Return type
 
@@ -379,12 +379,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **image_id** | **string**| The identifier of the image |
- **update_custom_image_request** | [**\OpenAPI\Client\Model\UpdateCustomImageRequest**](../Model/UpdateCustomImageRequest.md)|  |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **image_id** | **string**| The identifier of the image | |
+| **update_custom_image_request** | [**\OpenAPI\Client\Model\UpdateCustomImageRequest**](../Model/UpdateCustomImageRequest.md)|  | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
 

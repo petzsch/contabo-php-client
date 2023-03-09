@@ -1,10 +1,10 @@
 # OpenAPI\Client\PaymentMethodsApi
 
-All URIs are relative to https://api.contabo.com.
+All URIs are relative to https://api.contabo.com, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**retrievePaymentMethodList()**](PaymentMethodsApi.md#retrievePaymentMethodList) | **GET** /v1/payment-methods | List payment methods
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**retrievePaymentMethodList()**](PaymentMethodsApi.md#retrievePaymentMethodList) | **GET** /v1/payment-methods | List payment methods |
 
 
 ## `retrievePaymentMethodList()`
@@ -53,16 +53,16 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
- **page** | **int**| Number of page to be fetched. | [optional]
- **size** | **int**| Number of elements per page. | [optional]
- **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional]
- **payment_method_id** | **int**| The id of the payment method | [optional]
- **payment_method** | **string**| Payment method name | [optional]
- **direct_debit** | **bool**| Automatic debit from your payment method | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
+| **page** | **int**| Number of page to be fetched. | [optional] |
+| **size** | **int**| Number of elements per page. | [optional] |
+| **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional] |
+| **payment_method_id** | **int**| The id of the payment method | [optional] |
+| **payment_method** | **string**| Payment method name | [optional] |
+| **direct_debit** | **bool**| Automatic debit from your payment method | [optional] |
 
 ### Return type
 

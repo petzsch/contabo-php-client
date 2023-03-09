@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 **type** | **string** | Customer type |
 **private** | [**\OpenAPI\Client\Model\CustomerTypePrivate**](CustomerTypePrivate.md) |  |
 **business** | [**\OpenAPI\Client\Model\CustomerTypeBusiness**](CustomerTypeBusiness.md) |  |
-**tax_percentage** | **double** | Customer tax percentage |
+**tax_percentage** | **float** | Customer tax percentage |
 **currency** | **string** | Customer currency |
-**balance** | **double** | Customer balance |
+**balance** | **float** | Customer balance |
 **locale** | **string** | Customer locale |
 **addresses** | [**\OpenAPI\Client\Model\CustomerAddress[]**](CustomerAddress.md) |  |
 **emails** | [**\OpenAPI\Client\Model\CustomerEmail[]**](CustomerEmail.md) |  |

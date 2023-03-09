@@ -1,10 +1,10 @@
 # OpenAPI\Client\TagsAuditsApi
 
-All URIs are relative to https://api.contabo.com.
+All URIs are relative to https://api.contabo.com, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**retrieveTagAuditsList()**](TagsAuditsApi.md#retrieveTagAuditsList) | **GET** /v1/tags/audits | List history about your tags (audit)
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**retrieveTagAuditsList()**](TagsAuditsApi.md#retrieveTagAuditsList) | **GET** /v1/tags/audits | List history about your tags (audit) |
 
 
 ## `retrieveTagAuditsList()`
@@ -55,18 +55,18 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. |
- **x_trace_id** | **string**| Identifier to trace group of requests. | [optional]
- **page** | **int**| Number of page to be fetched. | [optional]
- **size** | **int**| Number of elements per page. | [optional]
- **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional]
- **tag_id** | **int**| The identifier of the tag. | [optional]
- **request_id** | **string**| The requestId of the API call which led to the change. | [optional]
- **changed_by** | **string**| UserId of the user which led to the change. | [optional]
- **start_date** | **\DateTime**| Start of search time range. | [optional]
- **end_date** | **\DateTime**| End of search time range. | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
+| **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
+| **page** | **int**| Number of page to be fetched. | [optional] |
+| **size** | **int**| Number of elements per page. | [optional] |
+| **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional] |
+| **tag_id** | **int**| The identifier of the tag. | [optional] |
+| **request_id** | **string**| The requestId of the API call which led to the change. | [optional] |
+| **changed_by** | **string**| UserId of the user which led to the change. | [optional] |
+| **start_date** | **\DateTime**| Start of search time range. | [optional] |
+| **end_date** | **\DateTime**| End of search time range. | [optional] |
 
 ### Return type
 
