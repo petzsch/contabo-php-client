@@ -42,7 +42,7 @@ $apiInstance = new OpenAPI\Client\Api\ObjectStoragesApi(
     $config
 );
 $x_request_id = 04e0f898-37b4-48bc-a794-1a57abe6aa31; // string | [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually.
-$object_storage_id = 4a6f95be-2ac0-4e3c-8eed-0dc67afed640; // string | The identifier of the object storage
+$object_storage_id = 4a6f95be-2ac0-4e3c-8eed-0dc67afed640; // string | The identifier of the object storage.
 $x_trace_id = 'x_trace_id_example'; // string | Identifier to trace group of requests.
 
 try {
@@ -58,7 +58,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
-| **object_storage_id** | **string**| The identifier of the object storage | |
+| **object_storage_id** | **string**| The identifier of the object storage. | |
 | **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
@@ -246,7 +246,7 @@ $apiInstance = new OpenAPI\Client\Api\ObjectStoragesApi(
     $config
 );
 $x_request_id = 04e0f898-37b4-48bc-a794-1a57abe6aa31; // string | [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually.
-$object_storage_id = 4a6f95be-2ac0-4e3c-8eed-0dc67afed640; // string | The identifier of the object storage
+$object_storage_id = 4a6f95be-2ac0-4e3c-8eed-0dc67afed640; // string | The identifier of the object storage.
 $x_trace_id = 'x_trace_id_example'; // string | Identifier to trace group of requests.
 
 try {
@@ -262,7 +262,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
-| **object_storage_id** | **string**| The identifier of the object storage | |
+| **object_storage_id** | **string**| The identifier of the object storage. | |
 | **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
@@ -384,7 +384,7 @@ $apiInstance = new OpenAPI\Client\Api\ObjectStoragesApi(
     $config
 );
 $x_request_id = 04e0f898-37b4-48bc-a794-1a57abe6aa31; // string | [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually.
-$object_storage_id = 4a6f95be-2ac0-4e3c-8eed-0dc67afed640; // string | The identifier of the object storage
+$object_storage_id = 4a6f95be-2ac0-4e3c-8eed-0dc67afed640; // string | The identifier of the object storage.
 $x_trace_id = 'x_trace_id_example'; // string | Identifier to trace group of requests.
 
 try {
@@ -400,7 +400,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
-| **object_storage_id** | **string**| The identifier of the object storage | |
+| **object_storage_id** | **string**| The identifier of the object storage. | |
 | **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
@@ -448,7 +448,7 @@ $apiInstance = new OpenAPI\Client\Api\ObjectStoragesApi(
     $config
 );
 $x_request_id = 04e0f898-37b4-48bc-a794-1a57abe6aa31; // string | [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually.
-$object_storage_id = 4a6f95be-2ac0-4e3c-8eed-0dc67afed640; // string | The identifier of the object storage
+$object_storage_id = 4a6f95be-2ac0-4e3c-8eed-0dc67afed640; // string | The identifier of the object storage.
 $patch_object_storage_request = new \OpenAPI\Client\Model\PatchObjectStorageRequest(); // \OpenAPI\Client\Model\PatchObjectStorageRequest
 $x_trace_id = 'x_trace_id_example'; // string | Identifier to trace group of requests.
 
@@ -465,7 +465,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
-| **object_storage_id** | **string**| The identifier of the object storage | |
+| **object_storage_id** | **string**| The identifier of the object storage. | |
 | **patch_object_storage_request** | [**\OpenAPI\Client\Model\PatchObjectStorageRequest**](../Model/PatchObjectStorageRequest.md)|  | |
 | **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
@@ -514,7 +514,7 @@ $apiInstance = new OpenAPI\Client\Api\ObjectStoragesApi(
     $config
 );
 $x_request_id = 04e0f898-37b4-48bc-a794-1a57abe6aa31; // string | [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually.
-$object_storage_id = 4a6f95be-2ac0-4e3c-8eed-0dc67afed640; // string | The identifier of the object storage
+$object_storage_id = 4a6f95be-2ac0-4e3c-8eed-0dc67afed640; // string | The identifier of the object storage.
 $upgrade_object_storage_request = new \OpenAPI\Client\Model\UpgradeObjectStorageRequest(); // \OpenAPI\Client\Model\UpgradeObjectStorageRequest
 $x_trace_id = 'x_trace_id_example'; // string | Identifier to trace group of requests.
 
@@ -531,7 +531,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
-| **object_storage_id** | **string**| The identifier of the object storage | |
+| **object_storage_id** | **string**| The identifier of the object storage. | |
 | **upgrade_object_storage_request** | [**\OpenAPI\Client\Model\UpgradeObjectStorageRequest**](../Model/UpgradeObjectStorageRequest.md)|  | |
 | **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 

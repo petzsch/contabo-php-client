@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **tenant_id** | **string** | Your customer tenant id |
 **customer_id** | **string** | Your customer number |
-**user_id** | **string** | User&#39;s id |
+**user_id** | **string** | The identifier of the user. |
 **first_name** | **string** | The first name of the user. Users may contain letters, numbers, colons, dashes, and underscores. There is a limit of 255 characters per user. |
 **last_name** | **string** | The last name of the user. Users may contain letters, numbers, colons, dashes, and underscores. There is a limit of 255 characters per user. |
 **email** | **string** | The email of the user to which activation and forgot password links are being sent to. There is a limit of 255 characters per email. |

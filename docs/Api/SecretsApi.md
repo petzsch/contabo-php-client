@@ -83,7 +83,7 @@ deleteSecret($x_request_id, $secret_id, $x_trace_id)
 
 Delete existing secret by id
 
-You can remove a specific secret from your account
+You can remove a specific secret from your account.
 
 ### Example
 

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **int** | The identifier of the audit entry. |
+**id** | **int** | The ID of the audit entry. |
 **action** | **string** | Type of the action. |
 **timestamp** | **\DateTime** | When the change took place. |
 **tenant_id** | **string** | Customer tenant id |

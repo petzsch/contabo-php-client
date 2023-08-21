@@ -84,7 +84,7 @@ deleteImage($x_request_id, $image_id, $x_trace_id)
 
 Delete an uploaded custom image by its id
 
-Your are free to delete a previously uploaded custom images at any time.
+Your are free to delete a previously uploaded custom images at any time
 
 ### Example
 
@@ -209,7 +209,7 @@ retrieveImage($x_request_id, $image_id, $x_trace_id): \OpenAPI\Client\Model\Find
 
 Get details about a specific image by its id
 
-Get details about a specific image. This could be either a standard or custom image. In case of an custom image you can also check the download status.
+Get details about a specific image. This could be either a standard or custom image. In case of an custom image you can also check the download status
 
 ### Example
 
@@ -345,7 +345,7 @@ updateImage($x_request_id, $image_id, $update_custom_image_request, $x_trace_id)
 
 Update custom image name by its id
 
-Update name of the custom image.
+Update name of the custom image
 
 ### Example
 

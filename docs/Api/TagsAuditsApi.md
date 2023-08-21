@@ -4,7 +4,7 @@ All URIs are relative to https://api.contabo.com, except if the operation define
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**retrieveTagAuditsList()**](TagsAuditsApi.md#retrieveTagAuditsList) | **GET** /v1/tags/audits | List history about your tags (audit) |
+| [**retrieveTagAuditsList()**](TagsAuditsApi.md#retrieveTagAuditsList) | **GET** /v1/tags/audits | List history about your assignments (audit) |
 
 
 ## `retrieveTagAuditsList()`
@@ -13,9 +13,9 @@ All URIs are relative to https://api.contabo.com, except if the operation define
 retrieveTagAuditsList($x_request_id, $x_trace_id, $page, $size, $order_by, $tag_id, $request_id, $changed_by, $start_date, $end_date): \OpenAPI\Client\Model\ListTagAuditsResponse
 ```
 
-List history about your tags (audit)
+List history about your assignments (audit)
 
-List and filters the history about your tags.
+List and filters the history about your assignments.
 
 ### Example
 

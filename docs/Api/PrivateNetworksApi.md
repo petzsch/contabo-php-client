@@ -151,7 +151,7 @@ deletePrivateNetwork($x_request_id, $private_network_id, $x_trace_id)
 
 Delete existing Private Network by id
 
-Delete existing Private Network by id and automatically unassign all instances from it
+Delete existing Virtual Private Cloud by id and automatically unassign all instances from it
 
 ### Example
 
@@ -339,7 +339,7 @@ try {
 ## `retrievePrivateNetworkList()`
 
 ```php
-retrievePrivateNetworkList($x_request_id, $x_trace_id, $page, $size, $order_by, $name, $instance_ids): \OpenAPI\Client\Model\ListPrivateNetworkResponse
+retrievePrivateNetworkList($x_request_id, $x_trace_id, $page, $size, $order_by, $name, $instance_ids, $region, $data_center): \OpenAPI\Client\Model\ListPrivateNetworkResponse
 ```
 
 List Private Networks
@@ -370,9 +370,11 @@ $size = 10; // int | Number of elements per page.
 $order_by = name:asc; // string[] | Specify fields and ordering (ASC for ascending, DESC for descending) in following format `field:ASC|DESC`.
 $name = myPrivateNetwork; // string | The name of the Private Network
 $instance_ids = 100, 101, 102; // string | Comma separated instances identifiers
+$region = EU; // string | The slug of the region where your Private Network is located
+$data_center = European Union (Germany) 1; // string | The data center where your Private Network is located
 
 try {
-    $result = $apiInstance->retrievePrivateNetworkList($x_request_id, $x_trace_id, $page, $size, $order_by, $name, $instance_ids);
+    $result = $apiInstance->retrievePrivateNetworkList($x_request_id, $x_trace_id, $page, $size, $order_by, $name, $instance_ids, $region, $data_center);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling PrivateNetworksApi->retrievePrivateNetworkList: ', $e->getMessage(), PHP_EOL;
@@ -390,6 +392,8 @@ try {
 | **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional] |
 | **name** | **string**| The name of the Private Network | [optional] |
 | **instance_ids** | **string**| Comma separated instances identifiers | [optional] |
+| **region** | **string**| The slug of the region where your Private Network is located | [optional] |
+| **data_center** | **string**| The data center where your Private Network is located | [optional] |
 
 ### Return type
 
@@ -436,7 +440,7 @@ $apiInstance = new OpenAPI\Client\Api\PrivateNetworksApi(
     $config
 );
 $x_request_id = 04e0f898-37b4-48bc-a794-1a57abe6aa31; // string | [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually.
-$private_network_id = 12345; // int | The identifier of the Private Network
+$private_network_id = 100; // int | The identifier of the Private Network
 $instance_id = 100; // int | The identifier of the instance
 $x_trace_id = 'x_trace_id_example'; // string | Identifier to trace group of requests.
 

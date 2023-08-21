@@ -10,10 +10,12 @@ Name | Type | Description | Notes
 **name** | **string** | Instance Name |
 **display_name** | **string** | Instance display name |
 **instance_id** | **int** | Instance ID |
-**region** | **string** | Instance Region where the compute instance should be located. |
+**data_center** | **string** | The data center where your Private Network is located |
+**region** | **string** | Instance region where the compute instance should be located. |
+**region_name** | **string** | The name of the region where the instance is located. |
 **product_id** | **string** | Product ID |
 **image_id** | **string** | Image&#39;s id |
-**ip_config** | [**\OpenAPI\Client\Model\IpConfig2**](IpConfig2.md) |  | [optional]
+**ip_config** | [**\OpenAPI\Client\Model\IpConfig**](IpConfig.md) |  |
 **mac_address** | **string** | MAC Address |
 **ram_mb** | **float** | Image RAM size in MB |
 **cpu_cores** | **int** | CPU core count |
@@ -27,6 +29,6 @@ Name | Type | Description | Notes
 **add_ons** | [**\OpenAPI\Client\Model\AddOnResponse[]**](AddOnResponse.md) |  |
 **error_message** | **string** | Message in case of an error. | [optional]
 **product_type** | **string** | Instance&#39;s category depending on Product Id |
-**default_user** | **string** | Default user name created for login during (re-)installation with administrative privileges. Allowed values for Linux/BSD are &#x60;admin&#x60; (use sudo to apply administrative privileges like root) or &#x60;root&#x60;. Allowed values for Windows are &#x60;admin&#x60; (has administrative privileges like administrator) or &#x60;administrator&#x60;. |
+**default_user** | **string** | Default user name created for login during (re-)installation with administrative privileges. Allowed values for Linux/BSD are &#x60;admin&#x60; (use sudo to apply administrative privileges like root) or &#x60;root&#x60;. Allowed values for Windows are &#x60;admin&#x60; (has administrative privileges like administrator) or &#x60;administrator&#x60;. | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -39,11 +39,11 @@ $x_trace_id = 'x_trace_id_example'; // string | Identifier to trace group of req
 $page = 1; // int | Number of page to be fetched.
 $size = 10; // int | Number of elements per page.
 $order_by = name:asc; // string[] | Specify fields and ordering (ASC for ascending, DESC for descending) in following format `field:ASC|DESC`.
-$private_network_id = 12345; // int | The identifier of the Private Network.
+$private_network_id = 12345; // int | The identifier of the Private Network
 $request_id = D5FD9FAF-58C0-4406-8F46-F449B8E4FEC3; // string | The requestId of the API call which led to the change.
 $changed_by = 23cbb6d6-cb11-4330-bdff-7bb791df2e23; // string | User name which did the change.
 $start_date = 2021-01-01; // \DateTime | Start of search time range.
-$end_date = 2021-01-01; // \DateTime | End of search time range.
+$end_date = 2023-05-31; // \DateTime | End of search time range.
 
 try {
     $result = $apiInstance->retrievePrivateNetworkAuditsList($x_request_id, $x_trace_id, $page, $size, $order_by, $private_network_id, $request_id, $changed_by, $start_date, $end_date);
@@ -62,7 +62,7 @@ try {
 | **page** | **int**| Number of page to be fetched. | [optional] |
 | **size** | **int**| Number of elements per page. | [optional] |
 | **order_by** | [**string[]**](../Model/string.md)| Specify fields and ordering (ASC for ascending, DESC for descending) in following format &#x60;field:ASC|DESC&#x60;. | [optional] |
-| **private_network_id** | **int**| The identifier of the Private Network. | [optional] |
+| **private_network_id** | **int**| The identifier of the Private Network | [optional] |
 | **request_id** | **string**| The requestId of the API call which led to the change. | [optional] |
 | **changed_by** | **string**| User name which did the change. | [optional] |
 | **start_date** | **\DateTime**| Start of search time range. | [optional] |

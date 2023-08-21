@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **tenant_id** | **string** | Your customer tenant id |
 **customer_id** | **string** | Your customer number |
 **id** | **float** | The identifier of the audit entry. |
-**tag_id** | **float** | The identifier of the tag |
+**tag_id** | **float** | The identifier of the audit entry. |
 **action** | **string** | Type of the action. |
 **timestamp** | **\DateTime** | When the change took place. |
 **changed_by** | **string** | User ID |

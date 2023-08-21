@@ -4,7 +4,7 @@ All URIs are relative to https://api.contabo.com, except if the operation define
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**retrieveInstancesAuditsList()**](InstancesAuditsApi.md#retrieveInstancesAuditsList) | **GET** /v1/compute/instances/audits | List history about your instances (audit) triggered via the API |
+| [**retrieveInstancesAuditsList()**](InstancesAuditsApi.md#retrieveInstancesAuditsList) | **GET** /v1/compute/instances/audits | List history about your custom images (audit) |
 
 
 ## `retrieveInstancesAuditsList()`
@@ -13,9 +13,9 @@ All URIs are relative to https://api.contabo.com, except if the operation define
 retrieveInstancesAuditsList($x_request_id, $x_trace_id, $page, $size, $order_by, $instance_id, $request_id, $changed_by, $start_date, $end_date): \OpenAPI\Client\Model\ListInstancesAuditResponse
 ```
 
-List history about your instances (audit) triggered via the API
+List history about your custom images (audit)
 
-List and filters the history about your instances your triggered via the API.
+List and filters the history about your custom images.
 
 ### Example
 

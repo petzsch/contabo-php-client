@@ -8,7 +8,7 @@ All URIs are relative to https://api.contabo.com, except if the operation define
 | [**deleteSnapshot()**](SnapshotsApi.md#deleteSnapshot) | **DELETE** /v1/compute/instances/{instanceId}/snapshots/{snapshotId} | Delete existing snapshot by id |
 | [**retrieveSnapshot()**](SnapshotsApi.md#retrieveSnapshot) | **GET** /v1/compute/instances/{instanceId}/snapshots/{snapshotId} | Retrieve a specific snapshot by id |
 | [**retrieveSnapshotList()**](SnapshotsApi.md#retrieveSnapshotList) | **GET** /v1/compute/instances/{instanceId}/snapshots | List snapshots |
-| [**rollbackSnapshot()**](SnapshotsApi.md#rollbackSnapshot) | **POST** /v1/compute/instances/{instanceId}/snapshots/{snapshotId}/rollback | Rollback the instance to a specific snapshot by id |
+| [**rollbackSnapshot()**](SnapshotsApi.md#rollbackSnapshot) | **POST** /v1/compute/instances/{instanceId}/snapshots/{snapshotId}/rollback | Revert the instance to a particular snapshot based on its identifier |
 | [**updateSnapshot()**](SnapshotsApi.md#updateSnapshot) | **PATCH** /v1/compute/instances/{instanceId}/snapshots/{snapshotId} | Update specific snapshot by id |
 
 
@@ -284,10 +284,10 @@ try {
 ## `rollbackSnapshot()`
 
 ```php
-rollbackSnapshot($x_request_id, $instance_id, $snapshot_id, $x_trace_id): \OpenAPI\Client\Model\RollbackSnapshotResponse
+rollbackSnapshot($x_request_id, $instance_id, $snapshot_id, $body, $x_trace_id): \OpenAPI\Client\Model\RollbackSnapshotResponse
 ```
 
-Rollback the instance to a specific snapshot by id
+Revert the instance to a particular snapshot based on its identifier
 
 Rollback instance to a specific snapshot. The snapshot must be the latest one in order to be able to restore it, otherwise you will receive an error informing you that the snapshot is not the latest
 
@@ -311,10 +311,11 @@ $apiInstance = new OpenAPI\Client\Api\SnapshotsApi(
 $x_request_id = 04e0f898-37b4-48bc-a794-1a57abe6aa31; // string | [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually.
 $instance_id = 12345; // int | The identifier of the instance
 $snapshot_id = snap1628603855; // string | The identifier of the snapshot
+$body = array('key' => new \stdClass); // object
 $x_trace_id = 'x_trace_id_example'; // string | Identifier to trace group of requests.
 
 try {
-    $result = $apiInstance->rollbackSnapshot($x_request_id, $instance_id, $snapshot_id, $x_trace_id);
+    $result = $apiInstance->rollbackSnapshot($x_request_id, $instance_id, $snapshot_id, $body, $x_trace_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling SnapshotsApi->rollbackSnapshot: ', $e->getMessage(), PHP_EOL;
@@ -328,6 +329,7 @@ try {
 | **x_request_id** | **string**| [Uuid4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) to identify individual requests for support cases. You can use [uuidgenerator](https://www.uuidgenerator.net/version4) to generate them manually. | |
 | **instance_id** | **int**| The identifier of the instance | |
 | **snapshot_id** | **string**| The identifier of the snapshot | |
+| **body** | **object**|  | |
 | **x_trace_id** | **string**| Identifier to trace group of requests. | [optional] |
 
 ### Return type
@@ -340,7 +342,7 @@ try {
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
+- **Content-Type**: `application/json`
 - **Accept**: `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)

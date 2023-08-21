@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **name** | **string** | Instance name |
 **product_id** | **string** | Product id |
 **private_ip_config** | [**\OpenAPI\Client\Model\PrivateIpConfig**](PrivateIpConfig.md) |  |
-**ip_config** | [**\OpenAPI\Client\Model\IpConfig1**](IpConfig1.md) |  |
+**ip_config** | [**\OpenAPI\Client\Model\IpConfig**](IpConfig.md) |  |
 **status** | **string** | State of the instance in the Private Network |
 **error_message** | **string** | Message in case of an error. | [optional]
 

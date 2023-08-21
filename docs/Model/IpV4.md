@@ -4,10 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ip** | **string** | IP address |
-**gateway** | **string** | Gateway |
+**ip** | **string** | IP Address |
 **netmask_cidr** | **int** | Netmask CIDR |
-**broadcast** | **string** | Broadcast address |
-**net** | **string** | Net address |
+**gateway** | **string** | Gateway |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

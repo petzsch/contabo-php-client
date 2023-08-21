@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **int** | The identifier of the audit entry. |
+**id** | **int** | The ID of the audit entry. |
 **action** | **string** | Type of the action. |
 **timestamp** | **\DateTime** | When the change took place. |
 **tenant_id** | **string** | Customer tenant id |
@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **username** | **string** | Name of the user which led to the change. |
 **request_id** | **string** | The requestId of the API call which led to the change. |
 **trace_id** | **string** | The traceId of the API call which led to the change. |
-**instance_id** | **int** | The identifier of the instances |
+**instance_id** | **int** | The identifier of the instance |
 **changes** | **object** | List of actual changes. | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

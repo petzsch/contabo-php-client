@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** | Name of the data center |
 **slug** | **string** | Slug of the data center |
-**capabilities** | [**\OpenAPI\Client\Model\DatacenterCapabilities[]**](DatacenterCapabilities.md) |  |
+**capabilities** | **string[]** |  |
 **s3_url** | **string** | S3 URL of the data center |
 **region_name** | **string** | Name of the region |
 **region_slug** | **string** | Slug of the region |
